@@ -1,0 +1,13 @@
+{% block content %}<!-- Inicio del bloque  //-->
+<h1>Ingresa</h1><!-- Titulo  //-->
+<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+
+<h1>Por</h1> <p><a href="{{url_for('Ingresa_Restaurante')}}">restaurante</a></p><!--Opcion 1 de agregar //-->
+
+
+<h1>o</h1> <p><a href="{{url_for('Ingresa_Platillo')}}">platillo</a></p><br><!-- Opcion 2 de agregar  //-->
+
+
+<li><a href="{{url_for('home')}}">Menu</a></li><!-- Volver al menu  //-->
+
+{% endblock %}<!-- Fin del bloque  //-->

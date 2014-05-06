@@ -1,0 +1,44 @@
+{% block content %}
+<!DOCTYPE html>
+<html Lang="es"><!-- Lenguaje //-->
+	<head>  
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="stylesheet2.css">
+		<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+	</head>
+	<body>
+		<div id='contenido'>
+			<header>
+				<hgroup>
+					<h1>Restaurantes</h1>
+				</hgroup>
+				<nav>
+					<ul>
+						<li><a href="{{url_for('home')}}">Menu</a></li><!-- Volver al menu //-->
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<div id='textoPr'>
+					<hgroup>
+						<h1>Agregar platillo:</h1><!-- Titulo //-->
+
+					</hgroup>
+					<!-- Obtiene lo que se le solicita al cliente con el metodo post //-->
+					<form method="post" action="{{ url_for('Obtener_platillo') }}" name="Agregar_restaurante">
+        				<p><label> Restaurante: </label> <input type="text" name="restaurante" required></p><br>
+					<p><label> Platillo: </label> <input type="text" name="platillo" required></p><br>
+					<p><label> Sabor: </label> <input type="text" name="sabor" required></p><br>
+					<p><label> Pais: </label> <input type="text" name="pais" required></p><br>
+					<p><label> Ingredientes: </label> <input type="text" name="ingrediente" required></p><br>
+					<p><button type="submit">Registrar</button></p>
+					</form>
+			</div>
+			</section>		
+		</div>
+	</body>
+</html>
+{% endblock %}
+	
+
+

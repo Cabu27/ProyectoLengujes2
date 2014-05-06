@@ -1,0 +1,12 @@
+{% block content %}<!-- Inicio del bloque  //-->
+<!-- Pagina para la consulta del tipo de comida //-->
+<h1>Consulta del restaurane por tipo de comida</h1><!-- Titulo  //-->
+<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+<ul>
+{% for n in tipo %}<!--Ciclo para mostrar el tipo de comida de los restaurantes  //-->
+<li>{{n}}</li><!-- Se imprimen en el html los tipos de comida  //-->
+{% endfor %} <!-- Fin del ciclo //-->
+</ul>
+
+<li><a href="{{url_for('home')}}">Menu</a></li><!-- Volver al menu  //-->
+{% endblock %}<!-- Fin del bloque //-->

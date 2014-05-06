@@ -1,0 +1,37 @@
+{% block content %}
+<!DOCTYPE html>
+<html Lang="es"><!-- Lenguaje //-->
+	<head>  
+		<meta charset='utf-8'>
+		<title>Pagina de restaurante</title><!-- Titulo //-->
+		<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+		<link rel="stylesheet" href="stylesheet2.css">
+	</head>
+	<body>
+		<div id='contenido'>
+			<header>
+				<hgroup>
+					<h1>Restaurantes</h1>
+				</hgroup>
+				<nav>
+					<ul>
+						<li><a href="{{url_for('Insertar')}}">Ingresa</a></li> <!-- Redirecciona a otra pagina //-->
+						<li><a href="{{url_for('Consulta')}}">Consultar</a></li><!-- Redirecciona a otra pagina //-->
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<div id='textoPr'>
+					<article>
+					<hgroup> 
+						<h1>Todos los restaurantes que puedas encontrar</h1> <!-- Titulo //-->
+					</hgroup>
+					<p> Donde encuentras los restaurantes que mas te gusten <!-- Parrafo //-->
+					</p>
+					</article>
+			</div>
+			</section>		
+		</div>
+	</body>
+</html>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% block content %}<!-- Inicio del bloque  //-->
+<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato  //-->
+<h1>Cual consulta desea realizar?</h1><br><!-- Titulo  //-->
+<!-- Opciones de consulta  //-->
+<li><a href="{{url_for('Consulta_de_restaurantes')}}">Consulta de los restaurantes</a></li><br>
+
+<li><a href="{{url_for('Platillos_ingredientes')}}">Consulta de los ingredientes de platillos de un restaurante</a></li><br>
+
+<li><a href="{{url_for('Platillos_qTiene_Rest')}}">Consulta de los platillos del restaurante</a></li><br>
+
+<li><a href="{{url_for('Rest_por_Nombres')}}">Consulta de los nombres de los restaurantes</a></li><br>
+
+<li><a href="{{url_for('Rest_por_Tipo')}}">Consulta del tipo de platillos del restaurantes</a></li><br>
+
+<li><a href="{{url_for('Rest_qTiene_PlatilloPais')}}">Consulta de los restaurantes segun el pais el cual es el platillo</a></li><br>
+
+<li><a href="{{url_for('home')}}">Menu</a></li><br><!-- Volver al menu  //-->
+
+{% endblock %}<!-- Final del bloque  //-->

@@ -1,0 +1,12 @@
+{% block content %}<!-- Inicio del bloque  //-->
+<!-- Pagina para la consulta del tipo de comida segun el pais //-->
+<h1>Consulta del restaurane por tipo de comida del cual proviene</h1><!-- Titulo  //-->
+<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+<ul>
+{% for n in pais %}<!--Ciclo para mostrar los platillos del pais  //-->
+<li>{{n}}</li><!-- Se imprimen en el html los platillos  //-->
+{% endfor %} <!-- Fin del ciclo //-->
+</ul>
+
+<li><a href="{{url_for('home')}}">Menu</a></li><!-- Volver al menu  //-->
+{% endblock %}<!-- Fin del bloque //-->

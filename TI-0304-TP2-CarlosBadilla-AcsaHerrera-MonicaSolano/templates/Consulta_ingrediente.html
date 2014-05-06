@@ -1,0 +1,12 @@
+{% block content %}<!-- Inicio del bloque  //-->
+<!-- Pagina para la consulta de los ingredientes de la comida de un restaurante //-->
+<h1>Consulta del restaurane por tipo de comida</h1><!-- Titulo  //-->
+<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato //-->
+<ul>
+{% for n in ingrediente_select %}<!--Ciclo para mostrar los ingredientes  //-->
+<li>{{n}}</li><!-- Se imprimen en el html los restaurantes  //-->
+{% endfor %} <!-- Fin del ciclo //-->
+</ul>
+
+<li><a href="{{url_for('home')}}">Menu</a></li><!-- Volver al menu  //-->
+{% endblock %}<!-- Fin del bloque //-->

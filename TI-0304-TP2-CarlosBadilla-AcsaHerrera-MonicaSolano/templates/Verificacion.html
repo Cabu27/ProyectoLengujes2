@@ -1,0 +1,8 @@
+{% block content %}<!-- Inicio del bloque  //-->
+<!-- Pagina creada para notificar al cliente de que su restaurante ha sido agregado correctamente  //-->
+<strong><link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"></strong><!-- Formato  //-->
+<h1>Restaurante agregado</h1><br><!-- Mensaje  //-->
+
+<li><a href="{{url_for('home')}}">Menu</a></li><!-- Volver al menu  //-->
+
+{% endblock %}<!-- Fin del bloque  //-->
